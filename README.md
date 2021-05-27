@@ -1,1 +1,1 @@
-# Kodluyoruz-Csharp-101-Patikasi
+# Kodluyoruz C# 101 Patikasi
