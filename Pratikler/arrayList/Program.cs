@@ -69,8 +69,6 @@ namespace arrayList
             {
                 Console.WriteLine(item);
             }
-
-            
         }
     }
 }
