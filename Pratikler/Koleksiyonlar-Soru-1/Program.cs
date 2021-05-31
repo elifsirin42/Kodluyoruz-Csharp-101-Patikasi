@@ -26,19 +26,31 @@ namespace Koleksiyonlar_Soru_1
                 else
                     asalOlmayanSayilar.Add(sayi);
             }
-            Console.WriteLine(" **** Asal Sayilar **** ");
-            
+            Console.WriteLine(" **** Sıralı Olarak Asal Sayilar **** ");
+            asalSayilar.Sort();
             foreach (var asalSayi in asalSayilar)
             {
                 Console.WriteLine(asalSayi);  
             }
 
-             Console.WriteLine(" **** Asal Olmayan Sayilar **** ");
-            
+            Console.WriteLine(" **** Sıralı Olarak Asal Olmayan Sayilar **** ");
+            asalOlmayanSayilar.Sort();
             foreach (var asalOlmayanSayi in asalOlmayanSayilar)
             {
                 Console.WriteLine(asalOlmayanSayi);  
             }
+
+            //Asal Olanların eleman sayıları ve elemanlarının ortalamaları yazdırılmıştır
+            Console.WriteLine("Asal Olanların Eleman Sayısı: " + asalSayilar.Count);
+            Console.WriteLine("Asal Olan Sayıların Ortalaması: " + OrtalamaHesapla(asalSayilar));
+            
+
+            //Asal Olmayan eleman sayıları ve elemanlarının ortalamaları yazdırılmıştır
+            Console.WriteLine("Asal Olmayanların Eleman Sayısı: " + asalOlmayanSayilar.Count);
+            Console.WriteLine("Asal Olmayan Sayıların Ortalaması: " + OrtalamaHesapla(asalOlmayanSayilar));
+            
+
+
         }
 
          //Konsoldan girilen sayının kontrolü için oluşturulmuştur.
@@ -105,6 +117,15 @@ namespace Koleksiyonlar_Soru_1
             }
         }
         return sayi != 1;
+        }
+
+        public static int OrtalamaHesapla(List<int> liste){
+            int toplam = 0;
+            for (var i = 0; i < liste.Count; i++)
+            {
+               toplam +=liste[i]; 
+            }
+            return toplam/liste.Count;
         }
     
     }
