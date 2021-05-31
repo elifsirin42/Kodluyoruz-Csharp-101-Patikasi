@@ -14,6 +14,9 @@ namespace static_sinif_ve_uyeler
             Calisan calisan2 = new Calisan("Elif", "Şirin", "IT");
             Console.WriteLine("Çalışan Sayisi: {0}",Calisan.CalisanSayisi);
 
+            //Static sınıflardaki fonksiyonlara nesne olmadan sınıfla erişilir.
+            //Static sınıf içerisinde static olmayan herhangi bir property veya fonksiyon tanımlayamayız.
+            //Static sınıflardan kalıtım işlemi uygulanamaz.
             Console.WriteLine("Toplama işlemi sonucu {0}", Islemler.Topla(300,100)); //400
             Console.WriteLine("Çıkarma işlemi sonucu {0}", Islemler.Cikar(300,100)); //200
    
