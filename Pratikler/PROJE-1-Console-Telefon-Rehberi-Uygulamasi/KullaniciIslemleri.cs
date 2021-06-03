@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace PROJE_1_Console_Telefon_Rehberi_Uygulamasi
 {
+    // Kullanıcının yapabileceği işlemler burada oluşturulmuştur.
     public class KullaniciIslemleri{
 
-        //
+        // Rehbere telefon numarasi kaydedilmesi sağlanmıştır.
         public void TelefonNoKaydet( List<Kullanici> kullanicilar,List<string> kullaniciIsimleri, List<string> kullaniciSoyisimleri ){
 
             Kullanici kullanici = new Kullanici();
@@ -28,6 +29,8 @@ namespace PROJE_1_Console_Telefon_Rehberi_Uygulamasi
             Console.WriteLine();
             
         }
+        
+        // Rehberdeki Telefon numarasının kullanıcının isteği doğrultusunda silinmesi sağlanmıştır.
         public bool TelefonNoSil(List<Kullanici> kullanicilar, List<String> kullaniciIsimleri, List<string> kullaniciSoyisimleri){
             
             Console.Write("Lütfen numarasını silmek istediğiniz kişinin adını veya soyadını giriniz:  ");
@@ -81,6 +84,8 @@ namespace PROJE_1_Console_Telefon_Rehberi_Uygulamasi
             }
 
         }
+
+        // Rehberdeki Telefon numarasının kullanıcının isteği doğrultusunda güncellenmesi sağlanmıştır.
         public bool TelefonNoGüncelle(List<Kullanici> kullanicilar, List<String> kullaniciIsimleri, List<string> kullaniciSoyisimleri){
             
             Console.Write("Lütfen numarasını güncellemek istediğiniz kişinin adını veya soyadını giriniz:  ");
@@ -138,6 +143,8 @@ namespace PROJE_1_Console_Telefon_Rehberi_Uygulamasi
             }
 
         }
+
+        // Rehberin kullanıcının isteği doğrultusunda listelenmesi sağlanmıştır.
         public void RehberiListele(List<Kullanici> kullanicilar){
             
             Console.WriteLine();
@@ -158,6 +165,8 @@ namespace PROJE_1_Console_Telefon_Rehberi_Uygulamasi
             Console.WriteLine();
             
         }
+
+        // Kullanıcın Rehber içinde arama yapması sağlanmıştır.
         public void RehberdeAramaYap(List<Kullanici> kullanicilar){
             Console.WriteLine();
             Console.WriteLine("Arama yapmak istediğiniz tipi seçiniz.");
@@ -200,6 +209,8 @@ namespace PROJE_1_Console_Telefon_Rehberi_Uygulamasi
             }
 
         }
+
+        // Kullanıcıya yapabilceği işlemlerin listelenmesi sağlanmıştır.
         public int IslemleriListele(){
             Console.WriteLine();
             Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz :)");
@@ -251,7 +262,5 @@ namespace PROJE_1_Console_Telefon_Rehberi_Uygulamasi
             }
             return 0;
         }
-
-        
     }
 }

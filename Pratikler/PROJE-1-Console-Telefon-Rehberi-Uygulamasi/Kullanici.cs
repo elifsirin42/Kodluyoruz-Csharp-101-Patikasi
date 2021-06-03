@@ -1,6 +1,8 @@
 using System;
 
 namespace PROJE_1_Console_Telefon_Rehberi_Uygulamasi {
+
+    //Kullanici sınıfı oluşturulmuştur.
     public class Kullanici {
 
 
